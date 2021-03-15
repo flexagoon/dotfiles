@@ -1,0 +1,9 @@
+[submodule ".config/awesome/bling"]
+	path = .config/awesome/bling
+	url = https://github.com/Nooo37/bling
+[submodule ".config/awesome/layout-machi"]
+	path = .config/awesome/layout-machi
+	url = https://github.com/xinhaoyuan/layout-machi
+[submodule ".config/awesome/widgets"]
+	path = .config/awesome/widgets
+	url = https://github.com/streetturtle/awesome-wm-widgets
