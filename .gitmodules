@@ -7,3 +7,9 @@
 [submodule ".config/awesome/widgets"]
 	path = .config/awesome/widgets
 	url = https://github.com/streetturtle/awesome-wm-widgets
+[submodule ".config/nvim/plugged/firenvim"]
+	path = .config/nvim/plugged/firenvim
+	url = https://github.com/glacambre/firenvim
+[submodule ".config/nvim/plugged/nord-vim"]
+	path = .config/nvim/plugged/nord-vim
+	url = https://github.com/arcticicestudio/nord-vim
