@@ -1,0 +1,7 @@
+# setxkbmap -layout us,ru -option grp:alt_shift_toggle
+# setxkbmap -option compose:ralt
+# setxkbmap -option caps:ctrl_modifier
+# setxkbmap -option grp_led:caps
+
+killall -q kmonad
+kmonad /home/flexagoon/Documents/keymap.kbd & disown

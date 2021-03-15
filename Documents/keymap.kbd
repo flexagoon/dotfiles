@@ -1,0 +1,54 @@
+(defcfg
+  input  (device-file "/dev/input/by-id/usb-ASASTeK_COMPUTER_INC._ROG_MacroKey-event-kbd")
+  output (uinput-sink "KMonad output"
+                      "/bin/sleep 1 && /bin/setxkbmap -option 'grp:alt_shift_toggle,compose:ralt' -layout us,ru")
+
+  cmp-seq ralt
+  fallthrough true
+  allow-cmd true
+)
+
+(defsrc
+  esc  f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12  pause ssrq del   home pgup pgdn power
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc             menu kp/  kp*  kp-
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \                kp7  kp8  kp9  kp+
+  caps a    s    d    f    g    h    j    k    l    ;    '    ret                   kp4  kp5  kp6
+  lsft z    x    c    v    b    n    m    ,    .    /    rsft up                    kp1  kp2  kp3  kprt
+  lctl lmet lalt           spc            ralt comp rctl left down right                 kp0  kp.
+)
+
+(defalias
+  cap  (tap-next (around lalt lsft) lctl)
+  fast (layer-toggle fastfunc)
+  met  (tap-next (around-next @fast) lmet)
+  fix  (cmd-button "/home/flexagoon/Documents/Git/layout_corrector/layot_corrector.sh
+"))
+
+(deflayer qwerty
+  esc  f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12  @fix  ssrq del   home pgup pgdn power
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc             menu kp/  kp*  kp-
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \                kp7  kp8  kp9  kp+
+  @cap a    s    d    f    g    h    j    k    l    ;    '    ret                   kp4  kp5  kp6
+  lsft z    x    c    v    b    n    m    ,    .    /    rsft up                    kp1  kp2  kp3  kprt
+  lctl lalt @met           spc            ralt @met rctl left down right                 kp0  kp.
+)
+
+(defalias
+  run M-d
+  rel M-S-r
+  kil M-S-q
+  fox M-b
+  trm M-ret
+  tel M-t
+  ema M-m
+  clp M-c
+)
+
+(deflayer fastfunc
+  XX   _    _    _    _    _    _    _    _    _    _    _    _    _     _    _     _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _                _    _    _    _
+  _    @kil _    @ema _    @tel _    _    _    _    _    _    _    _                _    _    _    _
+  _    _    _    @run _    _    _    _    _    _    _    _    @trm                  _    _    _
+  _    _    _    @clp    _    @fox _    @ema _    _    _    _    _                     _    _    _    _
+  _    _    _              _              _    comp _    _    _    _                     _    _
+)

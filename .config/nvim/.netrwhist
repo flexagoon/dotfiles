@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='/home/flexagoon/.config/awesome/keys'
+let g:netrw_dirhist_4='/home/flexagoon/.config'
+let g:netrw_dirhist_3='/home/flexagoon/.config/zsh/.zshrc/snippets'
+let g:netrw_dirhist_2='/home/flexagoon/.config/zsh/.zshrc'
+let g:netrw_dirhist_1='/home/flexagoon/.config/zsh/.zshrc/bin'
+let g:netrw_dirhist_0='/home/flexagoon/.config/zsh/.zshrc'
+let g:netrw_dirhist_9='/home/flexagoon/.config/zsh/.zshrc/completions'
+let g:netrw_dirhist_8='/home/flexagoon/.config/zsh/.zshrc'
+let g:netrw_dirhist_7='/home/flexagoon/.config/zsh/.oh-my-zsh'
+let g:netrw_dirhist_6='/home/flexagoon/.config/zsh/.zshrc'
