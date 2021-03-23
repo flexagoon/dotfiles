@@ -55,3 +55,4 @@
   ))
 
 (package! org-superstar)
+(package! org-alert)

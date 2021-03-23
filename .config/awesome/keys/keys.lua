@@ -52,7 +52,7 @@ keybinds = gears.table.join(
     awful.key({modkey          }, "space", function () awful.layout.inc( 1)                end,
               {description = "next layout", group = "layout"}),
     awful.key({modkey, "Shift" }, "space", function () awful.layout.inc(-1)                end,
-              {description = "previous layout", group = "layout"}),
+              {descriptin = "previous layout", group = "layout"}),
 
     awful.key({modkey          }, "/",     function () machi.default_editor.start_interactive() end,
               {desctiption = "edit machi layout", group = "layout"}),
@@ -61,30 +61,23 @@ keybinds = gears.table.join(
 )
 
 require("keys.tags")
-
--- Layout Machi
--- awful.keyboard.append_global_keybindings(
---     {
---         awful.key({modkey}, "/", function() machi.default_editor.start_interactive() end, {
---             description = "edit the current layout if it is a machi layout",
---             group = "layout"
---         }),
---         awful.key({modkey}, "e", function() machi.switcher.start() end, {
---             description = "switch between windows for a machi layout",
---             group = "layout"
---         })
---     })
 --Client keys------------------------------------------------------------
 clientkeys = gears.table.join(
     awful.key({modkey,  "Shift"}, "q",      function (c) c:kill() end,
               {description = "close", group = "windows"}),
 
-    awful.key({modkey,         }, "f",
+    awful.key({modkey          }, "f",
         function (c)
 	    c.fullscreen = not c.fullscreen
 	    c:raise()
 	end,
         {description = "toggle fullscreen", group = "windows"})
+)
+--Client buttons---------------------------------------------------------
+clientbuttons = awful.util.table.join(
+    awful.button({ }, 1, function (c) client.focus = c; c:raise() end),
+    awful.button({ modkey }, 1, awful.mouse.client.move),
+    awful.button({ modkey }, 3, awful.mouse.client.resize)
 )
 --Set global keys--------------------------------------------------------
 return keybinds

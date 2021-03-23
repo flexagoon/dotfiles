@@ -20,6 +20,9 @@ alias mine="xbacklight -set 1 && ethminer -U -P stratum1+ssl://0x4f6BBa6385F8D99
 alias clear="clear && echo && pfetch"
 alias dl="curl -O"
 
+alias v="f -e nvim"
+alias o="a -e xdg-open"
+
 alias make="sudo make"
 alias gpasswd="sudo gpasswd"
 alias grpck="sudo grpck"

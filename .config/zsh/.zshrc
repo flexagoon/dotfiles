@@ -37,6 +37,7 @@ zinit light-mode for \
     depth=1 romkatv/powerlevel10k
 
 eval $(thefuck --alias)
+eval "$(fasd --init auto)"
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
