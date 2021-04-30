@@ -18,12 +18,15 @@ alias rskill="killall -q rs2client.exe"
 alias orphans="paru -Qtdq | paru -Rns -"
 alias mine="xbacklight -set 1 && ethminer -U -P stratum1+ssl://0x4f6BBa6385F8D990c7AEB505E2C9372cBb8d88c2.flexagoon@eth-de.flexpool.io:5555"
 alias clear="clear && echo && pfetch"
+alias winbox="wine ~/Downloads/winbox64.exe &>/dev/null & disown"
 alias dl="curl -O"
+alias rb="reboot"
+alias i="paru -S"
 
 alias v="f -e nvim"
 alias o="a -e xdg-open"
 
-alias make="sudo make"
+#alias make="sudo make"
 alias gpasswd="sudo gpasswd"
 alias grpck="sudo grpck"
 
@@ -35,6 +38,9 @@ alias ls="exa"  # exa
 alias cat="bat" # bat
 alias ps="procs" # proc
 alias top="procs --watch"
+
+replace(){paru -Rs $1 && paru -S $2}
+alias re="replace"
 
 set -o kshglob
 task () {

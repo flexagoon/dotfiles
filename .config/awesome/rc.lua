@@ -50,7 +50,10 @@ awful.rules.rules = {
             screen = awful.screen.preferred,
             placement = awful.placement.no_overlap+awful.placement.no_offscreen
         }, callback = awful.client.setslave
-    }
+    },
+
+    { rule = { role = 'GtkFileChooserDialog'},
+	properties = { floating = true, placement = awful.placement.centered } }
 }
 --Signals----------------------------------------------------------------
 client.connect_signal("mouse::enter", function(c)

@@ -36,6 +36,8 @@ zinit light-mode for \
     ael-code/zsh-colored-man-pages \
     depth=1 romkatv/powerlevel10k
 
+zstyle ':completion:*:paths' path-completion yes
+
 eval $(thefuck --alias)
 eval "$(fasd --init auto)"
 
