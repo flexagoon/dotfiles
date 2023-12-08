@@ -1,0 +1,18 @@
+[user]
+	email = code@fxgn.dev
+	name = flexagoon
+	signingkey = 4CC547D7CDACC1B5
+[commit]
+	gpgSign = true
+[tag]
+	gpgSign = true
+[credential]
+	helper = store
+[init]
+	defaultBranch = main
+[alias]
+	c = clone
+[push]
+	autoSetupRemote = true
+[github]
+	user = flexagoon

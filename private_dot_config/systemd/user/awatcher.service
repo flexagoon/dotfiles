@@ -1,0 +1,12 @@
+[Unit]
+Description=ActivityWatch
+
+[Service]
+Type=simple
+ExecStart=/home/flexagoon/.local/bin/awatcher
+Restart=always
+RestartSec=1
+TimeoutStopSec=infinity
+
+[Install]
+WantedBy=gnome-session.target

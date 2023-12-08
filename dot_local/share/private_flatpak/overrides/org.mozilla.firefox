@@ -1,0 +1,4 @@
+[Context]
+shared=!ipc
+sockets=!cups;!pcsc;!x11
+features=!devel

@@ -1,0 +1,55 @@
+# Binaries
+[".local/bin/kmonad"]
+    type = "file"
+    url = "https://github.com/kmonad/kmonad/releases/latest/download/kmonad"
+    executable = true
+[".local/bin/awatcher"]
+    type = "archive-file"
+    url = "https://github.com/2e3s/awatcher/releases/latest/download/awatcher-bundle.zip"
+    path = "awatcher"
+    executable = true
+
+# Fonts
+[".local/share/fonts/FiraCode"]
+    type = "archive"
+    url = "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FiraCode.zip"
+    exact = true
+[".local/share/fonts/Epilogue"]
+    type = "archive"
+    url = "https://api.fontshare.com/v2/fonts/download/epilogue"
+    include = ["*/Fonts/OTF/**"]
+    stripComponents = 3
+    exact = true
+[".local/share/fonts/Fraunces"]
+    type = "archive"
+    url = "https://github.com/undercasetype/Fraunces/releases/download/1.000/UnderCaseType_Fraunces_1.000.zip"
+    include = ["*/*Desktop/static/ttf/**"]
+    stripComponents = 4
+    exact = true
+[".local/share/fonts/IBM Plex Mono"]
+    type = "archive"
+    url = "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/IBMPlexMono.zip"
+    exact = true
+[".local/share/fonts/Inter"]
+    type = "archive"
+    url = "https://github.com/rsms/inter/releases/download/v4.0/Inter-4.0.zip"
+    include = ["Inter.ttc", "*.ttf"]
+    exact = true
+[".local/share/fonts/Stardom"]
+    type = "archive"
+    url = "https://api.fontshare.com/v2/fonts/download/stardom"
+    include = ["*/Fonts/OTF/**"]
+    stripComponents = 3
+    exact = true
+[".local/share/fonts/Zodiak"]
+    type = "archive"
+    url = "https://api.fontshare.com/v2/fonts/download/zodiak"
+    include = ["*/Fonts/OTF/**"]
+    stripComponents = 3
+    exact = true
+[".local/share/fonts/Unbounded"]
+    type = "archive"
+    url = "https://unbounded.polkadot.network/Unbounded-Polkadot.zip"
+    include = ["*/unbounded/TTF/**"]
+    stripComponents = 3
+    exact = true
