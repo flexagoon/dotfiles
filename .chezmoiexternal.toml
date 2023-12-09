@@ -17,6 +17,22 @@
     type = "file"
     url = "https://raw.githubusercontent.com/Stunkymonkey/nautilus-open-any-terminal/master/nautilus_open_any_terminal/schemas/com.github.stunkymonkey.nautilus-open-any-terminal.gschema.xml"
 
+# Firefox
+[".config/firefox/chrome/firefox-gnome-theme"]
+    type = "git-repo"
+    url = "https://github.com/rafaelmardojai/firefox-gnome-theme"
+    refreshPeriod = "168h"
+[".config/firefox/updater.sh"]
+    type = "file"
+    url = "https://raw.githubusercontent.com/arkenfox/user.js/master/updater.sh"
+    executable = true
+    refreshPeriod = "168h"
+[".config/firefox/prefsCleaner.sh"]
+    type = "file"
+    url = "https://raw.githubusercontent.com/arkenfox/user.js/master/prefsCleaner.sh"
+    executable = true
+    refreshPeriod = "168h"
+
 # Fonts
 [".local/share/fonts/FiraCode"]
     type = "archive"
