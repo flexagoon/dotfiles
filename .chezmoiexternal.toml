@@ -3,11 +3,13 @@
     type = "file"
     url = "https://github.com/kmonad/kmonad/releases/latest/download/kmonad"
     executable = true
+    refreshPeriod = "168h"
 [".local/bin/awatcher"]
     type = "archive-file"
     url = "https://github.com/2e3s/awatcher/releases/latest/download/awatcher-bundle.zip"
     path = "awatcher"
     executable = true
+    refreshPeriod = "168h"
 
 # Nautilus Open Any Terminal
 [".local/share/nautilus-python/extensions/open_any_terminal_extension.py"]
