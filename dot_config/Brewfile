@@ -1,0 +1,17 @@
+tap "homebrew/bundle"
+tap "homebrew/services"
+
+brew "autorestic"
+brew "bat"
+brew "bitwarden-cli"
+brew "chezmoi"
+brew "fd"
+brew "go"
+brew "httpie"
+brew "ipython"
+brew "juliaup"
+brew "lsd"
+brew "neovim"
+brew "ripgrep"
+brew "syncthing", restart_service: true
+brew "zoxide"
