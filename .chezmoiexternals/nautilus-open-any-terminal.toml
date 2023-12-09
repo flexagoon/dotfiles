@@ -1,0 +1,6 @@
+[".local/share/nautilus-python/extensions/open_any_terminal_extension.py"]
+    type = "file"
+    url = "https://raw.githubusercontent.com/Stunkymonkey/nautilus-open-any-terminal/master/nautilus_open_any_terminal/open_any_terminal_extension.py"
+[".local/share/glib-2.0/schemas/com.github.stunkymonkey.nautilus-open-any-terminal.gschema.xml"]
+    type = "file"
+    url = "https://raw.githubusercontent.com/Stunkymonkey/nautilus-open-any-terminal/master/nautilus_open_any_terminal/schemas/com.github.stunkymonkey.nautilus-open-any-terminal.gschema.xml"

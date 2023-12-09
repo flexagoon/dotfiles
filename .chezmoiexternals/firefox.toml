@@ -1,0 +1,14 @@
+[".config/firefox/chrome/firefox-gnome-theme"]
+    type = "git-repo"
+    url = "https://github.com/rafaelmardojai/firefox-gnome-theme"
+    refreshPeriod = "168h"
+[".config/firefox/updater.sh"]
+    type = "file"
+    url = "https://raw.githubusercontent.com/arkenfox/user.js/master/updater.sh"
+    executable = true
+    refreshPeriod = "168h"
+[".config/firefox/prefsCleaner.sh"]
+    type = "file"
+    url = "https://raw.githubusercontent.com/arkenfox/user.js/master/prefsCleaner.sh"
+    executable = true
+    refreshPeriod = "168h"

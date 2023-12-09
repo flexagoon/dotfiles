@@ -1,0 +1,11 @@
+[".local/bin/kmonad"]
+    type = "file"
+    url = "https://github.com/kmonad/kmonad/releases/latest/download/kmonad"
+    executable = true
+    refreshPeriod = "168h"
+[".local/bin/awatcher"]
+    type = "archive-file"
+    url = "https://github.com/2e3s/awatcher/releases/latest/download/awatcher-bundle.zip"
+    path = "awatcher"
+    executable = true
+    refreshPeriod = "168h"
