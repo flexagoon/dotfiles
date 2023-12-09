@@ -10,8 +10,8 @@ global:
 locations:
     documents:
         from:
-            - /home/flexagoon/Documents/Contexts
-            - /home/flexagoon/Documents/Events
+            - {{ joinPath .chezmoi.homeDir "Documents/Contexts" }}
+            - {{ joinPath .chezmoi.homeDir "Documents/Events" }}
         to:
             - backblaze
         cron: 0 22 * * *

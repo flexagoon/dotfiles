@@ -3,7 +3,7 @@ Description=ActivityWatch
 
 [Service]
 Type=simple
-ExecStart=/home/flexagoon/.local/bin/awatcher
+ExecStart={{ joinPath .chezmoi.homeDir ".local/bin/awatcher" }}
 Restart=always
 RestartSec=1
 TimeoutStopSec=infinity
