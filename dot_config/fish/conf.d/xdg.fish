@@ -52,6 +52,9 @@ set -gx IPYTHONDIR $XDG_CONFIG_HOME/ipython
 set -gx CARGO_HOME $XDG_DATA_HOME/cargo
 set -gx RUSTUP_HOME $XDG_DATA_HOME/rustup
 
+# SSH
+alias ssh "ssh -o UserKnownHostsFile=$XDG_DATA_HOME/ssh/known_hosts"
+
 # Wakatime
 set -gx WAKATIME_HOME $XDG_CONFIG_HOME/wakatime
 
