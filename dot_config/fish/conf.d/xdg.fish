@@ -45,7 +45,7 @@ set -gx MATHEMATICA_USERBASE $XDG_CONFIG_HOME/mathematica
 set -gx NPM_CONFIG_USERCONFIG $XDG_CONFIG_HOME/npm/npmrc
 
 # Python
-set -gx PYTHONSTARTUP /etc/python/pythonrc
+set -gx PYTHONSTARTUP $XDG_CONFIG_HOME/pythonrc
 set -gx IPYTHONDIR $XDG_CONFIG_HOME/ipython
 
 # Rust
