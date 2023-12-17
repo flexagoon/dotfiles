@@ -1,2 +1,7 @@
 [Context]
-filesystems=!host
+shared=!ipc;!network
+sockets=!x11
+filesystems=!xdg-run/gvfs;!xdg-run/gvfsd;home;!host
+
+[Session Bus Policy]
+org.gtk.vfs.*=none
