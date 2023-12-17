@@ -38,6 +38,6 @@
 [".local/share/fonts/Unbounded"]
     type = "archive"
     url = "https://unbounded.polkadot.network/Unbounded-Polkadot.zip"
-    include = ["*/unbounded/TTF/**"]
-    stripComponents = 3
+    include = ["**/unbounded/TTF/**"]
+    stripComponents = 2
     exact = true
