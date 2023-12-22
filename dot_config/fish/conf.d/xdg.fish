@@ -55,6 +55,9 @@ set -gx RUSTUP_HOME $XDG_DATA_HOME/rustup
 # SSH
 alias ssh "ssh -o UserKnownHostsFile=$XDG_DATA_HOME/ssh/known_hosts"
 
+# Vim
+set -gx VIMINIT 'let $MYVIMRC = !has("nvim") ? "$XDG_CONFIG_HOME/vim/vimrc" : "$XDG_CONFIG_HOME/nvim/init.vim" | so $MYVIMRC'
+
 # Wakatime
 set -gx WAKATIME_HOME $XDG_CONFIG_HOME/wakatime
 
