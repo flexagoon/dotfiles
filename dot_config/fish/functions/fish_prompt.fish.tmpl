@@ -1,6 +1,8 @@
 function fish_prompt
+    {{- if eq .chezmoi.osRelease.variantID "silverblue" }}
     # Silverblue workaround
     set -l pwd (string replace /var/home /home $PWD)
+    {{ end }}
 
     echo
 
