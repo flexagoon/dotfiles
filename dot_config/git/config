@@ -12,6 +12,7 @@
 	defaultBranch = main
 [alias]
 	c = clone
+	ca = commit -a
 [push]
 	autoSetupRemote = true
 [github]
