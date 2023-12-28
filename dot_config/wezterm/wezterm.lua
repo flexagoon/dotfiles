@@ -17,6 +17,13 @@ config.keys = {
     mods = 'ALT',
     action = wezterm.action.DisableDefaultAssignment,
   },
+  {
+    key = 'j',
+    mods = 'SUPER',
+    action = wezterm.action.SpawnCommandInNewTab {
+      args = { 'fish', '-c', 'julia' },
+    },
+  },
 }
 
 return config
