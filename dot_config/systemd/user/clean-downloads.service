@@ -1,6 +1,0 @@
-[Unit]
-Description=Delete Old Downloads And Screenshots
-
-[Service]
-Type=oneshot
-ExecStart=find /home/flexagoon/Downloads /home/flexagoon/Pictures/Screenshots -mindepth 1 -mtime +7 -execdir rm -rfv -- '{}' \;
