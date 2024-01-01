@@ -1,0 +1,6 @@
+[Unit]
+Description=Delete Old Downloads
+
+[Service]
+Type=oneshot
+ExecStart=find /home/flexagoon/Downloads -mindepth 1 -mtime +7 -execdir rm -rfv -- '{}' \;
