@@ -55,6 +55,9 @@ set -gx RUSTUP_HOME $XDG_DATA_HOME/rustup
 # SSH
 alias ssh "ssh -o UserKnownHostsFile=$XDG_DATA_HOME/ssh/known_hosts"
 
+# SQLite
+set -gx SQLITE_HISTORY $XDG_CACHE_HOME/sqlite_history
+
 # Vim
 set -gx VIMINIT "let \$MYVIMRC = !has('nvim') ? '$XDG_CONFIG_HOME/vim/vimrc' : '$XDG_CONFIG_HOME/nvim/init.vim' | so \$MYVIMRC"
 
