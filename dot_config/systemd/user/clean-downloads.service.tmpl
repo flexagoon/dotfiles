@@ -3,4 +3,4 @@ Description=Delete Old Downloads And Screenshots
 
 [Service]
 Type=oneshot
-ExecStart=find {{joinPath .chezmoi.homeDir "Downloads"}} {{joinPath .chezmoi.homeDir "Pictures/Screenshots"}} -mindepth 1 -mtime +7 -execdir rm -rfv -- '{}' \;
+ExecStart=find {{joinPath .chezmoi.homeDir "Downloads"}} {{joinPath .chezmoi.homeDir "Pictures/Screenshots"}} -mindepth 1 -mtime +7 -delete
