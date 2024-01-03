@@ -28,4 +28,7 @@ if readline.get_current_history_length() == 0:
         except OSError:
             pass
 
-    atexit.register(write_history)
+    try:
+        __IPYTHON__
+    except:
+        atexit.register(write_history)
