@@ -49,7 +49,4 @@
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
                                         ;(unpin! t)
 
-;; (package! codeium :recipe (:host github :repo "Exafunction/codeium.el"))
-;; (package! cape)
-
 (package! evil-motion-trainer :recipe (:host github :repo "martinbaillie/evil-motion-trainer"))

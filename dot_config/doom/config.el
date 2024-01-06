@@ -102,7 +102,3 @@
 
 (global-evil-motion-trainer-mode 1)
 
-;; (use-package! codeium
-;;   :init
-;;   (setq-local completion-at-point-functions
-;;               (list (cape-super-capf #'codeium-completion-at-point #))))
