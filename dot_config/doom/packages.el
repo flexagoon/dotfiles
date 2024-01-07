@@ -50,3 +50,5 @@
                                         ;(unpin! t)
 
 (package! evil-motion-trainer :recipe (:host github :repo "martinbaillie/evil-motion-trainer"))
+
+(package! dockerfile-mode)
