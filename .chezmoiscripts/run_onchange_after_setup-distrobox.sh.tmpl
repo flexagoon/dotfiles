@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# BIND to boxes.ini {{ include "dot_config/distrobox/boxes.ini" | sha256sum }} 
+distrobox assemble create --file .config/distrobox/boxes.ini
