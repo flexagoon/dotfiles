@@ -11,6 +11,9 @@ alias adb "HOME=$ANDROID_HOME command adb"
 # Bash
 set -gx HISTFILE $XDG_STATE_HOME/bash/history
 
+# Fly
+set -gx FLY_CONFIG_DIR $XDG_STATE_HOME/fly
+
 # GnuPG
 set -gx GNUPGHOME $XDG_DATA_HOME/gnupg
 
