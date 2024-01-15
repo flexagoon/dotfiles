@@ -15,6 +15,10 @@ brew "go"
 brew "ipython"
 brew "juliaup"
 
+# Containers
+brew "dive"
+brew "podman-compose"
+
 # Backup
 brew "autorestic"    # Backup my files
 brew "chezmoi"       # Dotfile management
@@ -24,3 +28,4 @@ brew "syncthing", restart_service: true # Sync files from my phone
 # Misc
 brew "neovim"
 brew "yt-dlp"
+brew "grip" # Markdown preview
