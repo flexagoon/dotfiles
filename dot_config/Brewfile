@@ -13,6 +13,7 @@ brew "zoxide"    # cd replacement
 # Programming languages
 brew "go"
 brew "ipython"
+brew "poetry"
 brew "juliaup"
 
 # Containers
