@@ -27,6 +27,5 @@ brew "bitwarden-cli" # Required for storing secrets in chezmoi
 brew "syncthing", restart_service: true # Sync files from my phone
 
 # Misc
-brew "neovim"
 brew "yt-dlp"
 brew "grip" # Markdown preview
