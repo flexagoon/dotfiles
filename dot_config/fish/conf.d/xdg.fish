@@ -5,8 +5,9 @@ set -gx XDG_CONFIG_HOME ~/.config
 set -gx XDG_STATE_HOME ~/.local/state
 
 # Android
-set -gx ANDROID_HOME $XDG_DATA_HOME/android
-alias adb "HOME=$ANDROID_HOME command adb"
+set -gx ANDROID_HOME $ANDROID_USER_HOME/sdk
+set -gx ANDROID_USER_HOME $XDG_DATA_HOME/android
+alias adb "HOME=$ANDROID_USER_HOME command adb"
 
 # Bash
 set -gx HISTFILE $XDG_STATE_HOME/bash/history
