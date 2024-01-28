@@ -1,34 +1,29 @@
-import os
-import atexit
-import readline
-from pathlib import Path
+#!/usr/bin/env python3
 
-if readline.get_current_history_length() == 0:
+def is_vanilla() -> bool:
+    """ :return: whether running "vanilla" Python """
+    import sys
+    return not hasattr(__builtins__, '__IPYTHON__') and 'bpython' not in sys.argv[0]
 
-    state_home = os.environ.get("XDG_STATE_HOME")
-    if state_home is None:
-        state_home = Path.home() / ".local" / "state"
-    else:
+
+def setup_history():
+    """ read and write history from state file """
+    import os
+    import atexit
+    import readline
+    from pathlib import Path
+
+    # https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html#variables
+    if state_home := os.environ.get('XDG_STATE_HOME'):
         state_home = Path(state_home)
+    else:
+        state_home = Path.home() / '.local' / 'state'
 
-    history_path = state_home / "python_history"
-    if history_path.is_dir():
-        raise OSError(f"'{history_path}' cannot be a directory")
+    history: Path = state_home / 'python_history'
 
-    history = str(history_path)
+    readline.read_history_file(str(history))
+    atexit.register(readline.write_history_file, str(history))
 
-    try:
-        readline.read_history_file(history)
-    except OSError: # Non existent
-        pass
 
-    def write_history():
-        try:
-            readline.write_history_file(history)
-        except OSError:
-            pass
-
-    try:
-        __IPYTHON__
-    except:
-        atexit.register(write_history)
+if is_vanilla():
+    setup_history()
