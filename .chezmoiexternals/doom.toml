@@ -1,3 +1,0 @@
-[".config/doom"]
-    type = "git-repo"
-    url = "https://github.com/flexagoon/emacs"
