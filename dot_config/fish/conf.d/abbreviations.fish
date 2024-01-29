@@ -9,8 +9,8 @@ abbr  py   python
 abbr  i    flatpak install
 abbr  di   sudo dnf install
 abbr  bi   brew install
-abbr  td   cd (mktemp -d)
-abbr  tmp  cd (mktemp -d)
+abbr  td   "cd (mktemp -d)"
+abbr  tmp  "cd (mktemp -d)"
 abbr  j    julia
 abbr  c    chezmoi
 
