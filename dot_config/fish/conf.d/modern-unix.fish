@@ -3,6 +3,6 @@ if status is-interactive
     alias grep="rg"
     alias ls="lsd"
     alias tree="lsd --tree"
-    zoxide init fish | source
-    alias cd="z"
+    zoxide init fish --cmd n | source
+    alias cd="n"
 end
