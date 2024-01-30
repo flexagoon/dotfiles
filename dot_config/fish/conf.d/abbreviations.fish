@@ -15,4 +15,3 @@ abbr  j    julia
 abbr  c    chezmoi
 
 abbr  cr   sudo systemd-cryptenroll --wipe-slot=tpm2 --tpm2-device=auto --tpm2-pcrs=1+4+5+7+9 /dev/nvme0n1p3
-abbr  bwu  "set -x NODE_OPTIONS '--no-deprecation' && set -x BW_SESSION (bw unlock --raw)"

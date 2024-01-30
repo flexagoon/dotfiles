@@ -21,7 +21,7 @@ backends:
     backblaze:
         type: b2
         path: lair-sank-railway:/backup
-        key: {{ (bitwardenFields "item" "Backblaze").restic_enc_key.value }}
+        key: {{ (rbwFields "Backblaze").restic_enc_key.value }}
         env:
-            b2_account_id: {{ (bitwardenFields "item" "Backblaze").acc_id.value }}
-            b2_account_key: {{ (bitwardenFields "item" "Backblaze").restic_acc_key.value }}
+            b2_account_id: {{ (rbwFields "Backblaze").acc_id.value }}
+            b2_account_key: {{ (rbwFields "Backblaze").restic_acc_key.value }}
