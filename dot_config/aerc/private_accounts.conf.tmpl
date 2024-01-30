@@ -1,0 +1,9 @@
+{{- $username := (rbw "Disroot").data.username -}}
+
+[Main]
+source        = imaps://{{ $username }}@disroot.org:993
+outgoing      = smtp://{{ $username }}@disroot.org:587
+default       = INBOX
+from          = <{{ $username }}@disroot.org>
+cache-headers = true
+source-cred-cmd = rbw get Disroot
