@@ -3,7 +3,6 @@ tap "homebrew/services"
 
 # Modern Unix
 brew "bat"       # cat replacement
-brew "git-delta" # diff replacement
 brew "fd"        # find replacement 
 brew "httpie"    # curl replacement (for some usecases)
 brew "lsd"       # ls replacement
