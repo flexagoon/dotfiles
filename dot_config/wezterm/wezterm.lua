@@ -10,7 +10,7 @@ config.front_end = 'OpenGL'
 config.window_decorations = 'RESIZE'
 config.use_fancy_tab_bar = false
 config.tab_bar_at_bottom = true
-config.color_scheme = 'Catppuccin Frappe'
+config.color_scheme = 'Gruvbox Material (Gogh)'
 
 config.keys = {
   -- Alt+Enter is used for a line break in many REPLs
