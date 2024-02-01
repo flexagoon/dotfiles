@@ -30,3 +30,4 @@ brew "yt-dlp"
 brew "xdg-ninja", args: ["HEAD"]
 brew "tlrc"
 brew "numbat"
+brew "aerc"
