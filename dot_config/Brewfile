@@ -28,3 +28,5 @@ brew "syncthing", restart_service: true # Sync files from my phone
 # Misc
 brew "yt-dlp"
 brew "xdg-ninja", args: ["HEAD"]
+brew "tlrc"
+brew "numbat"
