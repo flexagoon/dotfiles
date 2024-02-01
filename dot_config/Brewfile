@@ -10,20 +10,20 @@ brew "ripgrep"   # grep replacement
 brew "zoxide"    # cd replacement
 
 # Programming languages
-brew "go"
-brew "ipython"
-brew "poetry"
-brew "juliaup"
+brew "go"        # The most boring language
+brew "ipython"   # Python REPL if it was usable
+brew "poetry"    # pip if it was usable
+brew "juliaup"   # Python language if it was usable
 
 # Backup
-brew "autorestic"    # Backup my files
-brew "chezmoi"       # Dotfile management
-brew "rbw"           # Required for storing secrets in chezmoi
+brew "autorestic"   # Backup my files
+brew "chezmoi"      # Dotfile management
+brew "rbw"          # Required for storing secrets in chezmoi
 brew "syncthing", restart_service: true # Sync files from my phone
 
 # Misc
-brew "yt-dlp"
-brew "xdg-ninja", args: ["HEAD"]
-brew "tlrc"
-brew "numbat"
-brew "aerc"
+brew "yt-dlp"   # Download anything from anywhere
+brew "xdg-ninja", args: ["HEAD"] # Declutter your HOME
+brew "tlrc"     # Man pages, but straight to the point
+brew "numbat"   # A calculator on steroids
+brew "aerc"     # TUI email client that doesn't require a PhD
