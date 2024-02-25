@@ -13,6 +13,7 @@
 [alias]
 	c = clone
 	ca = commit -a
+	graph = log --graph --all --oneline
 [push]
 	autoSetupRemote = true
 [github]
