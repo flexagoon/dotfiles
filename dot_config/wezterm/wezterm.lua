@@ -38,6 +38,26 @@ config.keys = {
     mods = 'ALT|SHIFT',
     action = wezterm.action.SplitVertical {}
   },
+  {
+    key = 'RightArrow',
+    mods = 'ALT|SHIFT',
+    action = wezterm.action.ActivatePaneDirection 'Right',
+  },
+  {
+    key = 'i',
+    mods = 'ALT|SHIFT',
+    action = wezterm.action.ActivatePaneDirection 'Right',
+  },
+  {
+    key = 'LeftArrow',
+    mods = 'ALT|SHIFT',
+    action = wezterm.action.ActivatePaneDirection 'Left',
+  },
+  {
+    key = 'm',
+    mods = 'ALT|SHIFT',
+    action = wezterm.action.ActivatePaneDirection 'Left',
+  },
 }
 
 -- ALT + number to activate tab
