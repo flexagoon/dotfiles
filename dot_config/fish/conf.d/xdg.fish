@@ -39,9 +39,6 @@ set -gx _JAVA_OPTIONS -Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
 set -gx JULIA_DEPOT_PATH $XDG_DATA_HOME/julia
 set -gx JULIAUP_DEPOT_PATH $XDG_DATA_HOME/julia
 
-# Less
-set -gx LESSHISTFILE $XDG_STATE_HOME/less/history
-
 # Mathematica
 set -gx MATHEMATICA_USERBASE $XDG_CONFIG_HOME/mathematica
 
