@@ -45,6 +45,9 @@ set -gx MATHEMATICA_USERBASE $XDG_CONFIG_HOME/mathematica
 # NPM
 set -gx NPM_CONFIG_USERCONFIG $XDG_CONFIG_HOME/npm/npmrc
 
+# PostgreSQL
+set -gx PSQL_HISTORY $XDG_DATA_HOME/psql_history
+
 # Python
 set -gx PYTHONSTARTUP $XDG_CONFIG_HOME/pythonrc
 set -gx IPYTHONDIR $XDG_CONFIG_HOME/ipython
