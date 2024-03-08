@@ -5,8 +5,6 @@ if wezterm.config_builder then
   config = wezterm.config_builder()
 end
 
-config.front_end = 'OpenGL'
-
 config.window_decorations = 'RESIZE'
 config.use_fancy_tab_bar = false
 config.tab_bar_at_bottom = true
