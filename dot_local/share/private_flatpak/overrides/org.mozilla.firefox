@@ -2,4 +2,7 @@
 shared=!ipc
 sockets=!cups;!pcsc;!x11
 features=!devel
-filesystems=xdg-config/firefox
+filesystems=!host-os;xdg-config/firefox
+
+[Environment]
+LD_PRELOAD=
