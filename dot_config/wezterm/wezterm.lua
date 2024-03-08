@@ -58,6 +58,26 @@ config.keys = {
     mods = 'ALT|SHIFT',
     action = wezterm.action.ActivatePaneDirection 'Left',
   },
+  {
+    key = 'DownArrow',
+    mods = 'ALT|SHIFT',
+    action = wezterm.action.ActivatePaneDirection 'Down',
+  },
+  {
+    key = 'n',
+    mods = 'ALT|SHIFT',
+    action = wezterm.action.ActivatePaneDirection 'Down',
+  },
+  {
+    key = 'UpArrow',
+    mods = 'ALT|SHIFT',
+    action = wezterm.action.ActivatePaneDirection 'Up',
+  },
+  {
+    key = 'e',
+    mods = 'ALT|SHIFT',
+    action = wezterm.action.ActivatePaneDirection 'Up',
+  },
 }
 
 -- ALT + number to activate tab
