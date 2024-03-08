@@ -1,8 +1,8 @@
 [Context]
 shared=!ipc
-sockets=!cups;!pcsc;!x11
+sockets=!cups;!pcsc;!fallback-x11;!x11
 features=!devel
-filesystems=!host-os;xdg-config/firefox
+filesystems=xdg-config/firefox;!host-os
 
 [Environment]
 LD_PRELOAD=

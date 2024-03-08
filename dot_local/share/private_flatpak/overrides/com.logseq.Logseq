@@ -1,3 +1,3 @@
 [Context]
 filesystems=~/Documents/Contexts/Personal/Notes;!home
-persistent=.pki;.logseq
+persistent=.logseq;.pki
