@@ -14,6 +14,13 @@ brew "go"        # The most boring language
 brew "ipython"   # Python REPL if it was usable
 brew "poetry"    # pip if it was usable
 brew "juliaup"   # Python language if it was usable
+brew "node"      # Unfortunately required for a lot of things :(
+
+# Dev tools
+brew "hugo"          # This thing powers fxgn.dev 
+brew "tailwindcss"   # CSS but trendy
+brew "flyctl"        # Simple deploys
+brew "cloc"          # Count lines of code
 
 # Backup
 brew "autorestic"   # Backup my files
