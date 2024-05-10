@@ -41,3 +41,7 @@
     include = ["**/unbounded/TTF/**"]
     stripComponents = 2
     exact = true
+[".local/share/fonts/Source Code Pro"]
+    type = "archive"
+    url = "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/SourceCodePro.zip"
+    exact = true

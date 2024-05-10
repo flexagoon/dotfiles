@@ -8,7 +8,10 @@ end
 config.window_decorations = 'RESIZE'
 config.use_fancy_tab_bar = false
 config.tab_bar_at_bottom = true
+
 config.color_scheme = 'Kanagawa (Gogh)'
+config.font = wezterm.font('SauceCodePro NFM', { weight = 'Medium' })
+config.font_size = 13
 
 config.keys = {
   -- Alt+Enter is used for a line break in many REPLs
