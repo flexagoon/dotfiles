@@ -1,4 +1,4 @@
 #!/bin/sh
 
-# BIND to Brewfile {{ include "dot_config/Brewfile" | sha256sum }} 
+# BIND to Brewfile {{ include "dot_config/Brewfile.tmpl" | sha256sum }} 
 brew bundle --cleanup --file .config/Brewfile
