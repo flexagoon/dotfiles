@@ -57,7 +57,7 @@ set -gx CARGO_HOME $XDG_DATA_HOME/cargo
 set -gx RUSTUP_HOME $XDG_DATA_HOME/rustup
 
 # SSH
-alias ssh "ssh -o UserKnownHostsFile=$XDG_DATA_HOME/ssh/known_hosts"
+alias ssh "ssh -o UserKnownHostsFile=$XDG_DATA_HOME/ssh/known_hosts -i $XDG_DATA_HOME/ssh/id_rsa"
 
 # SQLite
 set -gx SQLITE_HISTORY $XDG_CACHE_HOME/sqlite_history
