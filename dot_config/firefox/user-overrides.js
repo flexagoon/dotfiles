@@ -15,6 +15,8 @@ user_pref("privacy.clearOnShutdown_v2.historyFormDataAndDownloads", false);
 user_pref("media.eme.enabled", true);
 // Disable letterboxing
 user_pref("privacy.resistFingerprinting.letterboxing", false);
+// Enable WebGL
+user_pref("webgl.disabled", false);
 
 // REMOVE USELESS FEATURES
 // -----------------------------------------------
