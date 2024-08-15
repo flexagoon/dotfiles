@@ -10,7 +10,7 @@ user_pref("browser.startup.page", 3);
 user_pref("browser.download.useDownloadDir", true);
 // Don't clear history
 user_pref("privacy.clearOnShutdown.history", false);
-user_pref("privacy.cpd.history", false);
+user_pref("privacy.clearOnShutdown_v2.historyFormDataAndDownloads", false);
 // Enable DRM
 user_pref("media.eme.enabled", true);
 // Disable letterboxing
