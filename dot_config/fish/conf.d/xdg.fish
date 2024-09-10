@@ -42,8 +42,9 @@ set -gx JULIAUP_DEPOT_PATH $XDG_DATA_HOME/julia
 # Mathematica
 set -gx MATHEMATICA_USERBASE $XDG_CONFIG_HOME/mathematica
 
-# NPM
+# Node.js
 set -gx NPM_CONFIG_USERCONFIG $XDG_CONFIG_HOME/npm/npmrc
+set -gx NODE_REPL_HISTORY $XDG_STATE_HOME/node_repl_history
 
 # PostgreSQL
 set -gx PSQL_HISTORY $XDG_DATA_HOME/psql_history
