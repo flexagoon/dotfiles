@@ -2,7 +2,7 @@
 Description=Autorestic Backup Timer
 
 [Timer]
-OnCalendar=20:*:*
+OnCalendar=20:00:00
 Persistent=true
 
 [Install]
