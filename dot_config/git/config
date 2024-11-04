@@ -19,3 +19,5 @@
 	autoSetupRemote = true
 [github]
 	user = flexagoon
+[core]
+	sshCommand = ssh -o UserKnownHostsFile=/home/flexagoon/.local/share/ssh/known_hosts -i /home/flexagoon/.local/share/ssh/id_ed25519
