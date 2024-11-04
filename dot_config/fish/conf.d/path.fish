@@ -5,3 +5,6 @@ fish_add_path ~/.local/share/go/bin
 
 # pnpm
 fish_add_path ~/.local/share/pnpm
+
+# Flutter
+fish_add_path ~/.local/share/flutter/bin
