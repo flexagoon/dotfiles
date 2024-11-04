@@ -50,7 +50,7 @@ set -gx NODE_REPL_HISTORY $XDG_STATE_HOME/node_repl_history
 set -gx PSQL_HISTORY $XDG_DATA_HOME/psql_history
 
 # Python
-set -gx PYTHONSTARTUP $XDG_CONFIG_HOME/pythonrc
+set -gx PYTHON_HISTORY $XDG_STATE_HOME/python_history
 set -gx IPYTHONDIR $XDG_CONFIG_HOME/ipython
 
 # Rust
