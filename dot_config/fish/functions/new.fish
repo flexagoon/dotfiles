@@ -26,6 +26,6 @@ function new  --description 'Create a new project from a template'
   git remote add origin https://github.com/(git config user.name)/$name
 
   if test -f _hooks.fish
-    fish _hooks.fish && rm _hooks.fish
+    PROJECT_NAME=$name fish _hooks.fish && rm _hooks.fish
   end
 end
