@@ -3,4 +3,5 @@ Description=Autorestic Backup
 
 [Service]
 Type=oneshot
+ExecStart=/home/linuxbrew/.linuxbrew/bin/autorestic unlock
 ExecStart=/home/linuxbrew/.linuxbrew/bin/autorestic cron
