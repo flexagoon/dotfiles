@@ -13,7 +13,7 @@ function new  --description 'Create a new project from a template'
   if test ! -d $cookies
     git clone https://github.com/flexagoon/cookies $XDG_DATA_HOME/cookies
   else
-    env -C $cookies git pull > /dev/null
+    git -C $cookies pull > /dev/null
   end
 
   set -l template $argv[1]
