@@ -1,3 +1,0 @@
-[Context]
-shared=!ipc
-sockets=!pulseaudio;!fallback-x11;!x11
