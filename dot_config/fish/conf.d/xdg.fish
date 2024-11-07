@@ -13,7 +13,7 @@ alias adb "HOME=$ANDROID_USER_HOME command adb"
 set -gx HISTFILE $XDG_STATE_HOME/bash/history
 
 # Elixir
-set -gx MIX_HOME $XDG_DATA_HOME/mix
+set -gx MIX_XDG true
 
 # Fly
 set -gx FLY_CONFIG_DIR $XDG_STATE_HOME/fly
