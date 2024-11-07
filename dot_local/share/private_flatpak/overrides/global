@@ -1,0 +1,6 @@
+[Context]
+shared=!ipc;!network
+sockets=!fallback-x11;!x11;!pulseaudio;!cups;!pcsc;wayland
+devices=!all;dri
+features=!devel
+filesystems=!host;!host-os;!home

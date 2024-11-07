@@ -1,8 +1,4 @@
 [Context]
-shared=!ipc
-sockets=!cups;!pcsc;!fallback-x11;!x11
-features=!devel
-filesystems=xdg-config/firefox;!host-os
-
-[Environment]
-LD_PRELOAD=
+shared=network
+devices=all
+filesystems=xdg-config/firefox
