@@ -1,4 +1,0 @@
-[Context]
-shared=network
-devices=all
-filesystems=xdg-config/firefox

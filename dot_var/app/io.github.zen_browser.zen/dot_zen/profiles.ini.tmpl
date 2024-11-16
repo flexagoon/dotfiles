@@ -1,0 +1,24 @@
+{{- $profilePath := joinPath .chezmoi.homeDir "/.config/zen" -}}
+{{- $releaseId := mozillaInstallHash "/app/lib/firefox" -}}
+
+[Profile0]
+Name=Default (alpha)
+IsRelative=0
+Path={{- $profilePath }}
+ZenAvatarPath=chrome://browser/content/zen-avatars/avatar-32.svg
+
+[Profile1]
+Name=default
+IsRelative=1
+Path=vkeab37y.default
+ZenAvatarPath=chrome://browser/content/zen-avatars/avatar-23.svg
+Default=1
+
+[General]
+StartWithLastProfile=1
+Version=2
+
+[Install{{- $releaseId -}}]
+Default=/home/flexagoon/.config/zen
+Locked=1
+
