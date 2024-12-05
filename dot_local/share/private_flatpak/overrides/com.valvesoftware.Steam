@@ -1,2 +1,5 @@
 [Context]
-filesystems=~/.local/share/applications
+shared=ipc;network
+sockets=cups;pcsc;pulseaudio;!wayland;x11
+devices=all
+features=devel

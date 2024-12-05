@@ -1,2 +1,4 @@
-[Context
+[Context]
 shared=network
+sockets=pulseaudio
+filesystems=!home
