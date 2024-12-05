@@ -8,3 +8,6 @@ fish_add_path ~/.local/share/pnpm
 
 # Flutter
 fish_add_path ~/.local/share/flutter/bin
+
+# Elixir
+fish_add_path ~/.local/share/mix/escripts
