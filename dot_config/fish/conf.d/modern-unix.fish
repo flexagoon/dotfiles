@@ -7,5 +7,7 @@ if status is-interactive
     set -x MANPAGER 'nvim +Man!'
     zoxide init fish --cmd n | source
     alias cd="n"
-    alias sudo="run0"
+    if test ! -e /run/.toolboxenv
+        alias sudo="run0"
+    end
 end
