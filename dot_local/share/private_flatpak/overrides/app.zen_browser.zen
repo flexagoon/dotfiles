@@ -1,3 +1,5 @@
 [Context]
 shared=network
+sockets=pulseaudio
+devices=all
 filesystems=xdg-config/zen
