@@ -14,3 +14,4 @@ abbr  td   "cd (mktemp -d)"
 abbr  tmp  "cd (mktemp -d)"
 abbr  j    julia
 abbr  c    chezmoi
+abbr  ve   source .venv/bin/activate.fish
