@@ -12,6 +12,9 @@ alias adb "HOME=$ANDROID_USER_HOME command adb"
 # Bash
 set -gx HISTFILE $XDG_STATE_HOME/bash/history
 
+# .NET
+set -gx DOTNET_CLI_HOME $XDG_DATA_HOME/dotnet
+
 # Elixir
 set -gx MIX_XDG true
 
@@ -52,7 +55,8 @@ set -gx MYPY_CACHE_DIR $XDG_CACHE_HOME/mypy
 set -gx MYSQL_HISTFILE $XDG_DATA_HOME/mysql_history
 
 # Node.js
-set -gx NPM_CONFIG_USERCONFIG $XDG_CONFIG_HOME/npm/npmrc
+set -gx NPM_CONFIG_CACHE $XDG_CACHE_HOME/npm
+set -gx NPM_CONFIG_TMP $XDG_RUNTIME_DIR/npm
 set -gx NODE_REPL_HISTORY $XDG_STATE_HOME/node_repl_history
 
 # pnpm
