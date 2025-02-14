@@ -1,5 +1,5 @@
 [Context]
 shared=ipc;network
-sockets=cups;pcsc;pulseaudio;!wayland;x11
+sockets=pulseaudio;x11
 devices=all
 features=devel
