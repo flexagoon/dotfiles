@@ -12,6 +12,6 @@ abbr  di   sudo dnf install
 abbr  bi   brew install
 abbr  td   "cd (mktemp -d)"
 abbr  tmp  "cd (mktemp -d)"
-abbr  j    julia
+abbr  j    just
 abbr  c    chezmoi
 abbr  ve   source .venv/bin/activate.fish
