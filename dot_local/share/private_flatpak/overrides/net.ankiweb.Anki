@@ -1,5 +1,3 @@
 [Context]
 shared=network
 sockets=pulseaudio
-devices=all
-filesystems=home
