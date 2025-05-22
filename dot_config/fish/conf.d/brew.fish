@@ -2,7 +2,7 @@ set -gx HOMEBREW_PREFIX /home/linuxbrew/.linuxbrew
 set -gx HOMEBREW_CELLAR $HOMEBREW_PREFIX/Cellar
 set -gx HOMEBREW_REPOSITORY $HOMEBREW_PREFIX/Homebrew
 
-fish_add_path $HOMEBREW_PREFIX/bin $HOMEBREW_PREFIX/sbin
+fish_add_path -a $HOMEBREW_PREFIX/bin $HOMEBREW_PREFIX/sbin
 
 if test -d (brew --prefix)"/share/fish/completions"
     set -p fish_complete_path (brew --prefix)/share/fish/completions

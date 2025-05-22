@@ -42,7 +42,7 @@ set -gx GRADLE_USER_HOME $XDG_DATA_HOME/gradle
 set -gx _JAVA_OPTIONS -Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
 
 # Julia
-set -gx JULIA_DEPOT_PATH $XDG_DATA_HOME/julia
+set -gx JULIA_DEPOT_PATH $XDG_DATA_HOME/julia:
 set -gx JULIAUP_DEPOT_PATH $XDG_DATA_HOME/julia
 
 # Mathematica
