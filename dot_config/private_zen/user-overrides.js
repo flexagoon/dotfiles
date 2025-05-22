@@ -9,8 +9,7 @@ user_pref("browser.startup.page", 3);
 // Remember the file download location
 user_pref("browser.download.useDownloadDir", true);
 // Don't clear history
-user_pref("privacy.clearOnShutdown.history", false);
-user_pref("privacy.clearOnShutdown_v2.historyFormDataAndDownloads", false);
+user_pref("privacy.clearOnShutdown_v2.browsingHistoryAndDownloads", false);
 
 // REMOVE USELESS FEATURES
 // -----------------------------------------------
