@@ -5,8 +5,9 @@ set -gx XDG_CONFIG_HOME ~/.config
 set -gx XDG_STATE_HOME ~/.local/state
 
 # Android
-set -gx ANDROID_HOME $ANDROID_USER_HOME
 set -gx ANDROID_USER_HOME $XDG_DATA_HOME/android
+set -gx ANDROID_HOME $ANDROID_USER_HOME
+set -gx ANDROID_AVD_HOME $ANDROID_HOME/avd
 alias adb "HOME=$ANDROID_USER_HOME command adb"
 
 # Bash
@@ -59,7 +60,7 @@ set -gx MYSQL_HISTFILE $XDG_DATA_HOME/mysql_history
 
 # Node.js
 set -gx NPM_CONFIG_CACHE $XDG_CACHE_HOME/npm
-set -gx NPM_CONFIG_TMP $XDG_RUNTIME_DIR/npm
+# set -gx NPM_CONFIG_TMP $XDG_RUNTIME_DIR/npm
 set -gx NODE_REPL_HISTORY $XDG_STATE_HOME/node_repl_history
 
 # pnpm
