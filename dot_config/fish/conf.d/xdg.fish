@@ -18,6 +18,9 @@ set -gx DOTNET_CLI_HOME $XDG_DATA_HOME/dotnet
 # Elixir
 set -gx MIX_XDG true
 
+# ESP-IDF
+set -gx IDF_TOOLS_PATH $XDG_DATA_HOME/esp-idf
+
 # Fly
 set -gx FLY_CONFIG_DIR $XDG_STATE_HOME/fly
 
