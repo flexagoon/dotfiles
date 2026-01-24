@@ -10,6 +10,9 @@ set -gx ANDROID_HOME $ANDROID_USER_HOME
 set -gx ANDROID_AVD_HOME $ANDROID_HOME/avd
 alias adb "HOME=$ANDROID_USER_HOME command adb"
 
+# Ansible
+set -gx ANSIBLE_HOME $XDG_DATA_HOME/ansible
+
 # Bash
 set -gx HISTFILE $XDG_STATE_HOME/bash/history
 
@@ -52,6 +55,10 @@ set -gx JULIAUP_DEPOT_PATH $XDG_DATA_HOME/julia
 # Mathematica
 set -gx MATHEMATICA_USERBASE $XDG_CONFIG_HOME/mathematica
 
+# mitmproxy
+alias mitmproxy "mitmproxy --set confdir=$XDG_DATA_HOME/mitmproxy"
+alias mitmweb "mitmweb --set confdir=$XDG_DATA_HOME/mitmweb"
+
 # MyPy
 set -gx MYPY_CACHE_DIR $XDG_CACHE_HOME/mypy
 
@@ -72,6 +79,12 @@ set -gx PSQL_HISTORY $XDG_DATA_HOME/psql_history
 # Python
 set -gx PYTHON_HISTORY $XDG_STATE_HOME/python_history
 set -gx IPYTHONDIR $XDG_CONFIG_HOME/ipython
+
+# Radicle
+set -gx RAD_HOME $XDG_DATA_HOME/radicle
+
+# Ripgrep
+set -gx RIPGREP_CONFIG_PATH $XDG_CONFIG_HOME/ripgrep
 
 # Rust
 set -gx CARGO_HOME $XDG_DATA_HOME/cargo
