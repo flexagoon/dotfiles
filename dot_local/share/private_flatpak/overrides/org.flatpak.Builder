@@ -1,3 +1,4 @@
 [Context]
 shared=network
-filesystems=home
+features=devel
+filesystems=home;host

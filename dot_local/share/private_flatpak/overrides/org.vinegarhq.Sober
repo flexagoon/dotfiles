@@ -1,3 +1,4 @@
 [Context]
-shared=network
+shared=ipc;network
 sockets=pulseaudio
+features=devel

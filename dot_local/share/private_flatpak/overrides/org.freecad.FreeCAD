@@ -1,4 +1,5 @@
 [Context]
-shared=ipc;network
+shared=network
 sockets=x11
+devices=all
 filesystems=home
