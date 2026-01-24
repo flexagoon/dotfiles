@@ -1,0 +1,12 @@
+theme = Catppuccin Latte
+
+# font-family = MonoLisa
+
+keybind = ctrl+shift+m=goto_split:left
+keybind = ctrl+shift+i=goto_split:right
+
+resize-overlay = never
+
+shell-integration-features = ssh-env,ssh-terminfo
+
+adjust-cursor-thickness = 300%
