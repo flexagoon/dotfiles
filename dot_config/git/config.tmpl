@@ -1,11 +1,13 @@
 [user]
 	email = code@fxgn.dev
 	name = flexagoon
-	signingkey = 4CC547D7CDACC1B5
+	signingkey = {{ joinPath .chezmoi.homeDir ".ssh/id_ed25519.pub" }}
 [commit]
 	gpgSign = true
 [tag]
 	gpgSign = true
+[gpg]
+	format = ssh
 [credential]
 	helper = store
 [init]
@@ -26,4 +28,4 @@
 [core]
     compression = 9
 [http]
-	cookiefile = /home/flexagoon/.config/git/gitcookies
+	cookiefile = {{ joinPath .chezmoi.homeDir ".config/git/gitcookies" }}
