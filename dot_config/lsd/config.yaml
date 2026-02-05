@@ -1,2 +1,7 @@
 color:
   theme: custom
+
+sorting:
+  dir-grouping: first
+
+hyperlink: auto
