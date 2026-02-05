@@ -7,7 +7,8 @@ function info --description 'Get information about a command'
         echo (set_color -ou cyan)Alias(set_color normal)
         echo $description | fish_indent --ansi
 
-        set -l target (string split -f2 = $description)
+        set -l target (string split -m1 -f1 ' ' \
+                        (string split -m1 -f2 = $description))
         echo
         info $target
 
