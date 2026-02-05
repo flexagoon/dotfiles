@@ -6,6 +6,11 @@ function info --description 'Get information about a command'
       if string match -q 'alias*' $description
         echo (set_color -ou cyan)Alias(set_color normal)
         echo $description | fish_indent --ansi
+
+        set -l target (string split -f2 = $description)
+        echo
+        info $target
+
         return
       end
 
