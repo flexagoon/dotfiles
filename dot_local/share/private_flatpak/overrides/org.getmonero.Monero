@@ -1,0 +1,6 @@
+[Context]
+shared=network
+filesystems=xdg-data/Monero
+
+[Environment]
+QT_QPA_PLATFORM=wayland

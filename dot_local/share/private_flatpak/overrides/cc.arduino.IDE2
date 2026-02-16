@@ -1,0 +1,6 @@
+[Context]
+shared=ipc;network
+sockets=x11
+devices=all
+filesystems=home
+persistent=.arduinoIDE;.arduino15
