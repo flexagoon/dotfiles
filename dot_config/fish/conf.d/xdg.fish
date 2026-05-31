@@ -70,6 +70,9 @@ set -gx NPM_CONFIG_CACHE $XDG_CACHE_HOME/npm
 # set -gx NPM_CONFIG_TMP $XDG_RUNTIME_DIR/npm
 set -gx NODE_REPL_HISTORY $XDG_STATE_HOME/node_repl_history
 
+# Pi
+set -gx PI_CODING_AGENT_DIR $XDG_CONFIG_HOME/pi/agent
+
 # pnpm
 set -gx PNPM_HOME $XDG_DATA_HOME/pnpm
 
