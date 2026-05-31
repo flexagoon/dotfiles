@@ -27,12 +27,11 @@ brew "mysql-client"  # MySQL CLI
 brew "ansible"       # I'm not gay enough for Nix
 
 # Backup
-brew "autorestic"   # Backup my files
 {{- if not (lookPath "chezmoi") }}
 brew "chezmoi"      # Dotfile management
 {{ end }}
 brew "rbw"          # Required for storing secrets in chezmoi
-brew "syncthing", restart_service: true # Sync files from my phone
+brew "syncthing", restart_service: true # Sync files to my server
 
 # Misc
 brew "yt-dlp"   # Download anything from anywhere
