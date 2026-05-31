@@ -1,5 +1,5 @@
 #!/bin/sh
 
 # BIND to Brewfile {{ include "dot_config/Brewfile.tmpl" | sha256sum }} 
-brew bundle --cleanup --file .config/Brewfile
+brew bundle --cleanup --force-cleanup --file .config/Brewfile
 brew uninstall --ignore-dependencies systemd
