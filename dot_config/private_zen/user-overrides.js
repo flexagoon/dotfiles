@@ -1,7 +1,6 @@
 // CONVENIENCE
 // -----------------------------------------------
 // Enable urlbar searching
-user_pref("keyword.enabled", true); 
 user_pref("browser.search.suggest.enabled", true);
 user_pref("browser.urlbar.suggest.searches", true);
 // Enable session restore
