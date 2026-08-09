@@ -10,20 +10,23 @@ brew "ripgrep"   # grep replacement
 brew "zoxide"    # cd replacement
 
 # Programming languages
-brew "go"        # The most boring language
-brew "ipython"   # Python REPL if it was usable
-brew "uv"        # pip if it was usable
-brew "julia"     # Python language if it was usable
-brew "node"      # Unfortunately required for a lot of things :(
-brew "pnpm"      # npm if it was usable
-brew "elixir"    # I'm in love
+brew "go"         # The most boring language
+brew "ipython"    # Python REPL if it was usable
+brew "uv"         # pip if it was usable
+brew "juliaup"    # Python language if it was usable
+brew "node"       # Unfortunately required for a lot of things :(
+brew "pnpm"       # npm if it was usable
+brew "elixir"     # I'm in love
+brew "openjdk@21" # Android stuff
 
 # Dev tools
-brew "tailwindcss"   # CSS but trendy
-brew "flyctl"        # Simple deploys
-brew "cloc"          # Count lines of code
-brew "mysql-client"  # MySQL CLI
-brew "ansible"       # I'm not gay enough for Nix
+brew "tailwindcss"     # CSS but trendy
+brew "flyctl"          # Simple deploys
+brew "cloc"            # Count lines of code
+brew "pgcli"           # Postgres CLI
+brew "ansible"         # I'm not gay enough for Nix
+brew "pi-coding-agent" # 0.1x engineering
+brew "officecli"       # Office job for clankers
 
 # Backup
 {{- if not (lookPath "chezmoi") }}
@@ -37,3 +40,4 @@ brew "yt-dlp"   # Download anything from anywhere
 brew "xdg-ninja", args: ["HEAD"] # Declutter your HOME
 brew "tlrc"     # Man pages, but straight to the point
 brew "numbat"   # A calculator on steroids
+brew "pandoc"   # The ffmpeg of text files
